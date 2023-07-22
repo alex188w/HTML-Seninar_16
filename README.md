@@ -9,27 +9,41 @@
 1. При наведении на любую ссылку цвет текста должен стать красным
    
  .menu__link:hover {
+ 
      color: red;
+     
  }
 
 3. При нажатии на ссылку цвет текста должен стать зеленым в момент нажатия
+   
 .menu__link:active {
+
     color: green;
+    
 }
 
-4. Найти первый элемент списка и убрать нижнее подчеркивание ссылке
+5. Найти первый элемент списка и убрать нижнее подчеркивание ссылке
+   
 .menu__list:first-child .menu__link {
+
     text-decoration: none;
+    
 }
 
-5. Найти последний элемент списка и добавить ссылке жирность font-weight: bold
+7. Найти последний элемент списка и добавить ссылке жирность font-weight: bold
+   
 .menu__list:last-child .menu__link {
+
     font-weight: bold;
+    
 }
 
-6. У третьей ссылки нужно поменять цвет фона на оранжевый 
+9. У третьей ссылки нужно поменять цвет фона на оранжевый
+    
 .menu__list:nth-child(3) .menu__link {
+
     background-color: orange;
+    
 }
 
 
@@ -47,35 +61,53 @@
 Исходный код:
 
  <div class="product">
+  
    <div class="product__img"></div>
+   
    <h2 class="product__name">Name product</h2>
+   
    <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+   
  </div>
 
 Доббавлянем дочерний класс product_new 
 
  <div class="product product_new">
+  
    <div class="product__img"></div>
+   
    <h2 class="product__name">Name product</h2>
+   
    <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+   
  </div>
 
 CSS:
 Исходный код 
 
 .product {
+
   width: 250px;
+  
   padding: 24px;
+  
   border: 1px solid #000;
+  
 }
 
 .product__img {
+
   background-color: forestgreen;
+  
   height: 150px;
+  
 }
 
+
 .product::after {
+
   content: 'new';
+  
 }
 
 .product::before {
@@ -85,43 +117,78 @@ CSS:
 После решения задачи
 
 .product {
+
   width: 250px;
+  
   padding: 24px;
+  
   border: 1px solid #000;
+  
   position: relative: - добавили
+  
 }
+
 
 .product__img {
+
   background-color: forestgreen;
+  
   height: 150px;
+  
 }
 
+
 .product_new::after {
+
     position: absolute;
+    
     top: 8px;
+    
     right: 8px;
+    
     content: 'new';
+    
     width: 36px;
+    
     height: 36px;
+    
     background-color: darkred;
+    
     color: white;
+    
     display: flex;
+    
     justify-content: center;
+    
     align-items: center;
+    
   }
+
   
   .product_sale::before {
+  
     position: absolute;
+    
     top: 8px;
+    
     left: 8px;
+    
     content: 'sale';
+    
     width: 36px;
+    
     height: 36px;
+    
     background-color: orange;
+    
     color: white;
+    
     display: flex;
+    
     justify-content: center;
+    
     align-items: center;
+    
   }
 
 Задание 3 (тайминг 10 минут)
@@ -152,23 +219,38 @@ d. Все наведения должны быть плавными и выпо�
 e. Можно менять параметры ширины и высоты при необходимости
 
 .item {
+
     width: 150px;
+    
     height: 86px;
+    
     background-color: forestgreen;
+    
     border: 1px solid #000;
+    
     transition: transform 1s;
+    
   }
+
   
   .item_1:hover {
+  
     transform: translateX(50px);
+    
   }
+
 
   .item_2:hover {
+  
     transform: scale(2);
+    
   }
 
+
   .item_3:hover {
+  
     transform: rotate(60deg);
+    
   }
 
 Задание 5 (тайминг 20 минут)
@@ -178,27 +260,53 @@ e. Можно менять параметры ширины и высоты пр�
 3. Для этого вам необходимо подобрать значение высоты
 4. Задать значение фона для блоков
 5. Подобрать верный угол поворота
+   
 .content2 {
+
     margin-top: 200px;
+    
     margin-left: 200px;
+    
     padding-bottom: 200px;
+    
     position: relative;
+    
   }  
+
+  
   .iteml {
+  
     position: absolute;
+    
     width: 150px;
+    
     height: 62px;
+    
     border: 1px solid #000;
+    
     background-color: forestgreen;
+    
   }
+
+  
   .iteml_1 {
+  
     transform: rotate(45deg);
+    
   }
+
+  
   .iteml_2 {
+  
     transform: rotate(90deg);
+    
   }
+
+  
   .iteml_3 {
+  
     transform: rotate(135deg);
+    
   }
 
 Задание 6 (тайминг 10 минут)
@@ -216,25 +324,44 @@ https://animista.net/play/attention/wobble
 В css button добавляем строку animation: bounce-top 0.9s both;
 
  @-webkit-keyframes bounce-top {
+ 
      0% {
+     
        -webkit-transform: translateY(-45px);
+       
                transform: translateY(-45px);
+               
        -webkit-animation-timing-function: ease-in;
+       
                animation-timing-function: ease-in;
+               
        opacity: 1;
+       
      }
+     
     
 ----------------------------------------------------------------------------- далее длинный код
 
+
    .button {
+   
      animation: bounce-top 0.9s both;
+     
      width: 150px;
+     
      height: 50px;
+     
      background-color: purple;
+     
      color: white;
+     
      text-align: center;
+     
      line-height: 50px;
+     
      font-family: sans-serif;
+     
      font-size: 18px;
+     
    }
 
