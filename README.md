@@ -45,19 +45,19 @@
 
 Исходный код:
 
-<div class="product">
-  <div class="product__img"></div>
-  <h2 class="product__name">Name product</h2>
-  <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-</div>
+ <div class="product">
+   <div class="product__img"></div>
+   <h2 class="product__name">Name product</h2>
+   <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+ </div>
 
 Доббавлянем дочерний класс product_new 
 
-<div class="product product_new">
-  <div class="product__img"></div>
-  <h2 class="product__name">Name product</h2>
-  <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-</div>
+ <div class="product product_new">
+   <div class="product__img"></div>
+   <h2 class="product__name">Name product</h2>
+   <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+ </div>
 
 CSS:
 Исходный код 
