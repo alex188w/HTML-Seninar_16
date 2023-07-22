@@ -209,26 +209,31 @@ https://animista.net/play/basic/rotate-scale  , если необходимо б
 https://animista.net/play/attention/wobble
 
 Заходим на страницу произвольной анимации - выбираем анимацию (ATTENTION - BOUNCE)
+
 Нажимаем верхний правый угол - Generate Code - нажимаем Copy KeyFrames - добавляем в верхней части css
+
 В css button добавляем строку animation: bounce-top 0.9s both;
-@-webkit-keyframes bounce-top {
-    0% {
-      -webkit-transform: translateY(-45px);
-              transform: translateY(-45px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 1;
-    }
+
+ @-webkit-keyframes bounce-top {
+     0% {
+       -webkit-transform: translateY(-45px);
+               transform: translateY(-45px);
+       -webkit-animation-timing-function: ease-in;
+               animation-timing-function: ease-in;
+       opacity: 1;
+     }
+    
 ----------------------------------------------------------------------------- далее длинный код
-  .button {
-    animation: bounce-top 0.9s both;
-    width: 150px;
-    height: 50px;
-    background-color: purple;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    font-family: sans-serif;
-    font-size: 18px;
-  }
+
+   .button {
+     animation: bounce-top 0.9s both;
+     width: 150px;
+     height: 50px;
+     background-color: purple;
+     color: white;
+     text-align: center;
+     line-height: 50px;
+     font-family: sans-serif;
+     font-size: 18px;
+   }
 
